@@ -181,8 +181,18 @@
   "location": "Dublin, Ireland",
   "commit_description": "Add Phase 4 latent space walk notebook in .md format with runnable Python code, VS Code + Jupyter instructions, synthetic latent field traversal, curvature visualization, spectral field analysis, routing cost, and collapse detection. Follows Dream Lab notebook pattern."
 },
-
-
+{
+  "id": "T-031",
+  "phase": 4,
+  "title": "Holonomy Loop Notebook",
+  "path": "notebooks/02_holonomy_loops.md",
+  "status": "completed",
+  "priority": "medium",
+  "completed_at": "Friday, 30 October 2026, 21:15 GMT",
+  "location": "Dublin, Ireland",
+  "commit_description": "Add Phase 4 holonomy loop notebook in .md format with runnable Python code, VS Code + Jupyter instructions, synthetic loop traversal, holonomy accumulation, curvature visualization, and collapse-aware holonomy analysis. Follows Dream Lab notebook pattern."
+}, 
+    
 {
   "id": "T-020",
   "phase": 2,
