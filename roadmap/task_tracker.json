@@ -159,12 +159,15 @@
   "commit_description": "Implement audio multimodal adapter including waveform preprocessing, spectrogram feature extraction, manifold patch construction, curvature-aware metadata, spectral field estimation, routing metadata, collapse detection, and spectral drift. Establishes the third multimodal adapter for Phase 3 and integrates with curvature, holonomy, routing ecology, and Fantasy Engine runtime."
 },
     {
-      "id": "T-014",
-      "phase": 6,
-      "title": "Write invariant tests",
-      "path": "tests/test_invariant.py",
-      "status": "pending",
-      "priority": "medium"
+  "id": "T-014",
+  "phase": 3,
+  "title": "Implement symbolic multimodal adapter",
+  "path": "toolkit/multimodal/symbolic.py",
+  "status": "completed",
+  "priority": "medium",
+  "completed_at": "Friday, 30 October 2026, 21:10 GMT",
+  "location": "Dublin, Ireland",
+  "commit_description": "Implement symbolic multimodal adapter including structural normalization, graph/AST embedding, manifold patch construction, curvature-aware metadata, spectral field estimation, routing metadata, collapse detection, and spectral drift. Completes the multimodal adapter family for Phase 3 and integrates with curvature, holonomy, routing ecology, and Fantasy Engine runtime."
     },
     {
       "id": "T-015",
