@@ -1,54 +1,11 @@
-use crate::operators::{FusionOperator, RoutingOperator, CollapseGuard};
-use crate::geometry::{curvature, compute_hessian, collapse_detected};
-use crate::spectral::{eigenvalues, spectral_drift};
-use crate::worlds::{SoftWorld, alignment_score};
+pub mod operators;
+pub mod geometry;
+pub mod spectral;
+pub mod worlds;
 
-/// Integration check for the full C-layer pipeline.
-/// This ensures that all modules interact correctly and produce stable signals.
-pub fn integration_check(z1: &[f64], z2: &[f64]) -> bool {
-    // 1. Fusion
-    let fusion = FusionOperator::new();
-    let fused = fusion.apply(z1, z2);
-
-    // 2. Routing
-    let routing = RoutingOperator::new();
-    let routed = routing.route(&fused);
-
-    // 3. Collapse Guard
-    let guard = CollapseGuard::new();
-    if !guard.check(&routed) {
-        return false;
-    }
-
-    // 4. Geometry
-    let curv = curvature(&routed);
-    let hessian = compute_hessian(&routed);
-    if collapse_detected(&hessian) {
-        return false;
-    }
-
-    // 5. Spectral
-    let eigs = eigenvalues(&hessian);
-    if eigs.iter().any(|e| *e < 0.0) {
-        return false;
-    }
-
-    let drift = spectral_drift(&fused, &routed);
-    if drift > crate::DRIFT_TOLERANCE {
-        return false;
-    }
-
-    // 6. Soft-World
-    let world = SoftWorld::new();
-    let hol = world.holonomy_loop();
-    if hol.abs() > crate::HOLONOMY_TOLERANCE {
-        return false;
-    }
-
-    let align = alignment_score(&fused, &routed);
-    if align.abs() < crate::ALIGNMENT_TOLERANCE {
-        return false;
-    }
-
-    true
-}
+// Global numeric conventions for Phase 6
+pub const CURVATURE_BOUND: f64 = 10.0;       // max allowed curvature
+pub const HOLONOMY_TOLERANCE: f64 = 1e-3;    // soft-world holonomy tolerance
+pub const MIN_HESSIAN_DET: f64 = 1e-6;       // collapse threshold
+pub const DRIFT_TOLERANCE: f64 = 0.05;       // spectral drift threshold
+pub const ALIGNMENT_TOLERANCE: f64 = 0.1;    // multimodal alignment threshold
