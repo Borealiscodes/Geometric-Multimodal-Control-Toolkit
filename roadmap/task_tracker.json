@@ -536,3 +536,31 @@
 
   "commit_description": "Finalize Phase 7 by completing implementation batches 7–10. Adds full safety envelopes, adaptive tuning layer, SafetyEngine, TunedSafetyEngine, complete test suite, and Phase 7 documentation. Marks Phase 7 as structurally complete and prepares the system for Phase 8 Holonomy Runtime."
 },
+{
+  "id": "DN-phase8-planning",
+  "phase": 8,
+  "title": "Developer Note — Phase 8 Planning",
+  "path": "docs/developer_notes/phase8_planning.md",
+  "status": "completed",
+  "priority": "critical",
+  "completed_at": "Friday, 30 October 2026, 23:53 GMT",
+  "location": "Dublin, Ireland",
+
+  "summary": "Created Phase 8 Planning Note defining the Holonomy Runtime and Projection-Seed Ecology Layer (P-Layer). Establishes Phase 8 as the altitude where holonomy-aware routing, world-rule synthesis, and ecology-level stability fields are introduced. Clarifies that projection-seed geometry is Phase 9, while Phase 8 builds the ecological and holonomy conditions required for projection-seed activation.",
+
+  "batches": {
+    "batch_11": "Holonomy Runtime module planned (holonomy accumulation, decay, routing).",
+    "batch_12": "Projection-Seed Ecology module planned (ecology fields, alignment ecology, curvature ecology).",
+    "batch_13": "World-Rule Synthesizer planned (rule synthesis, rule coherence, rule enforcement).",
+    "batch_14": "Ecology-Aware Safety Envelope planned (holonomy envelope, alignment envelope, ecology envelope)."
+  },
+
+  "next_actions": [
+    "Begin Batch 11: Holonomy Runtime implementation.",
+    "Define holonomy accumulation and decay operators.",
+    "Implement holonomy-aware routing primitives.",
+    "Begin Projection-Seed Ecology scaffolding for Batch 12."
+  ],
+
+  "commit_description": "Add Developer Note for Phase 8 Planning, defining the architectural mandate for the Holonomy Runtime and Projection-Seed Ecology Layer (P-Layer). Establishes altitude identity, mission, components, constraints, and deliverables. Prepares the system for Phase 8 implementation and Phase 9 projection-seed geometry activation."
+},
