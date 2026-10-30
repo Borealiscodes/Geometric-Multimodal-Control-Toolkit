@@ -203,7 +203,17 @@
   "location": "Dublin, Ireland",
   "commit_description": "Add Phase 4 collapse surface notebook in .md format with runnable Python code, VS Code + Jupyter instructions, curvature heatmap, collapse mask visualization, routing hazard map, and spectral field analysis. Follows Dream Lab notebook pattern."
 },
-    
+{
+  "id": "T-033",
+  "phase": 4,
+  "title": "Multimodal Fusion Notebook",
+  "path": "notebooks/04_multimodal_fusion.md",
+  "status": "completed",
+  "priority": "medium",
+  "completed_at": "Friday, 30 October 2026, 21:22 GMT",
+  "location": "Dublin, Ireland",
+  "commit_description": "Add Phase 4 multimodal fusion notebook in .md format with runnable Python code, VS Code + Jupyter instructions, curvature mismatch visualization, spectral drift analysis, fusion cost computation, and modality boundary exploration. Follows Dream Lab notebook pattern."
+},
 {
   "id": "T-020",
   "phase": 2,
