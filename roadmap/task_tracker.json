@@ -445,4 +445,15 @@
   ],
 
   "priority": "high"
-}
+},
+{
+  "id": "IMP-phase6-plan",
+  "phase": 6,
+  "title": "Phase 6 Implementation Plan — Runtime Stability Layer",
+  "path": "docs/implementation/phase6_implementation_plan.md",
+  "status": "completed",
+  "priority": "high",
+  "completed_at": "Friday, 30 October 2026, 23:16 GMT",
+  "location": "Dublin, Ireland",
+  "commit_description": "Add Phase 6 Implementation Plan detailing the ordered execution steps for the Runtime Stability Layer (C-Layer). Defines implementation sequence for operator algebra, geometry primitives, spectral runtime, soft-world coherence, and full test harness integration. Establishes actionable guidance for completing Phase 6 and preparing for Phase 7 Operator Safety Envelope development."
+},
