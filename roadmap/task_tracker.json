@@ -93,12 +93,15 @@
   "commit_description": "Add geometrist doc defining curvature equations for multimodal soft manifolds including metric tensors, Christoffel symbols, Riemann curvature, Ricci curvature, scalar curvature, collapse surfaces, holonomy, spectral curvature, and boundary curvature. Establishes formal geometric substrate required for Phase 2 operator algebra and Lean CAD verification."
 },
     {
-      "id": "T-009",
-      "phase": 2,
-      "title": "Implement curvature operator",
-      "path": "toolkit/geometry/curvature.py",
-      "status": "pending",
-      "priority": "high"
+  "id": "T-009",
+  "phase": 2,
+  "title": "Implement curvature operator",
+  "path": "toolkit/geometry/curvature.py",
+  "status": "completed",
+  "priority": "high",
+  "completed_at": "Friday, 30 October 2026, 20:40 GMT",
+  "location": "Dublin, Ireland",
+  "commit_description": "Implement curvature operator including metric tensor, Christoffel symbols, Riemann curvature tensor, Ricci curvature, scalar curvature, and collapse detection. Provides core geometric operator required for Phase 2 operator algebra, routing ecology integration, and Fantasy Engine world-physics."
     },
     {
       "id": "T-010",
