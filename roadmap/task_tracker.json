@@ -303,6 +303,17 @@
   "location": "Dublin, Ireland",
   "commit_description": "Update Phase 5 Bill Nye Tile: Holonomy to include a subtle Hitchhiker’s Guide Easter egg referencing the number 42. Preserves full color-tile pedagogy and accessible, engineering, and geometrist tiers while enhancing public-facing science communication. No structural changes to equations or operator context; adds a playful, lore-aligned detail in the accessible section."
 },
+{
+  "id": "T-043",
+  "phase": 5,
+  "title": "Bill Nye Tile: Collapse Surfaces",
+  "path": "docs/explainers/T-043_collapse_surfaces.md",
+  "status": "completed",
+  "priority": "medium",
+  "completed_at": "Friday, 30 October 2026, 22:19 GMT",
+  "location": "Dublin, Ireland",
+  "commit_description": "Add Phase 5 Bill Nye Tile: Collapse Surfaces, providing an accessible, engineering, and geometrist-tier explainer of collapse geometry using color-tile pedagogy and emoji-coded multimodal intuition. Covers semantic sinkholes, Hessian degeneracy, negative curvature, spectral instability, and their impact on multimodal fusion, routing, world-building, and generative safety. Designed for public-facing science communication within the Geometric Multimodal Control Toolkit."
+},
     
 {
   "id": "T-020",
