@@ -1,0 +1,127 @@
+{
+  "generated_by": "Borealis S. Hedling",
+  "generated_at": "Friday, 30 October 2026, 19:08 GMT",
+  "location": "Dublin, Ireland",
+  "tasks": [
+    {
+      "id": "T-001",
+      "phase": 1,
+      "title": "Write Tessellation Bees accessible doc",
+      "path": "docs/accessible/tessellation_bees.md",
+      "status": "pending",
+      "priority": "high"
+    },
+    {
+      "id": "T-002",
+      "phase": 1,
+      "title": "Write Manifold Goats accessible doc",
+      "path": "docs/accessible/manifold_goats.md",
+      "status": "pending",
+      "priority": "high"
+    },
+    {
+      "id": "T-003",
+      "phase": 1,
+      "title": "Write Meadow Pedagogy accessible doc",
+      "path": "docs/accessible/meadow_pedagogy.md",
+      "status": "pending",
+      "priority": "high"
+    },
+    {
+      "id": "T-004",
+      "phase": 1,
+      "title": "Write Mandala Coloring Books accessible doc",
+      "path": "docs/accessible/mandala_coloring_books.md",
+      "status": "pending",
+      "priority": "medium"
+    },
+    {
+      "id": "T-005",
+      "phase": 1,
+      "title": "Write Co-Created Worlds accessible doc",
+      "path": "docs/accessible/co_created_worlds.md",
+      "status": "pending",
+      "priority": "medium"
+    },
+    {
+      "id": "T-006",
+      "phase": 1,
+      "title": "Write engineering doc: multimodal manifolds",
+      "path": "docs/engineering/multimodal_manifolds.md",
+      "status": "pending",
+      "priority": "high"
+    },
+    {
+      "id": "T-007",
+      "phase": 1,
+      "title": "Write engineering doc: routing ecology",
+      "path": "docs/engineering/routing_ecology.md",
+      "status": "pending",
+      "priority": "high"
+    },
+    {
+      "id": "T-008",
+      "phase": 1,
+      "title": "Write geometrist doc: curvature equations",
+      "path": "docs/geometrist/curvature_equations.md",
+      "status": "pending",
+      "priority": "high"
+    },
+    {
+      "id": "T-009",
+      "phase": 2,
+      "title": "Implement curvature operator",
+      "path": "toolkit/geometry/curvature.py",
+      "status": "pending",
+      "priority": "high"
+    },
+    {
+      "id": "T-010",
+      "phase": 2,
+      "title": "Implement holonomy operator",
+      "path": "toolkit/operators/holonomy.py",
+      "status": "pending",
+      "priority": "high"
+    },
+    {
+      "id": "T-011",
+      "phase": 3,
+      "title": "Implement text multimodal adapter",
+      "path": "toolkit/multimodal/text.py",
+      "status": "pending",
+      "priority": "medium"
+    },
+    {
+      "id": "T-012",
+      "phase": 4,
+      "title": "Create latent space walk notebook",
+      "path": "notebooks/01_latent_space_walk.ipynb",
+      "status": "pending",
+      "priority": "medium"
+    },
+    {
+      "id": "T-013",
+      "phase": 5,
+      "title": "Write Bill Nye Tile: Latent Spaces",
+      "path": "docs/explainers/bill_nye_tile_series/tile_1_latent_spaces.md",
+      "status": "pending",
+      "priority": "medium"
+    },
+    {
+      "id": "T-014",
+      "phase": 6,
+      "title": "Write invariant tests",
+      "path": "tests/test_invariant.py",
+      "status": "pending",
+      "priority": "medium"
+    },
+    {
+      "id": "T-015",
+      "phase": 7,
+      "title": "Cross-link all documentation",
+      "path": "docs/",
+      "status": "pending",
+      "priority": "low"
+    }
+  ]
+}
