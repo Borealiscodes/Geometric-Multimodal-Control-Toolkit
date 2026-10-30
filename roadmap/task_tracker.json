@@ -26,6 +26,17 @@
   "location": "Dublin, Ireland",
   "commit_description": "Add Final Developer Note consolidating roadmap restructuring, multimodal adapter expansion, operator toolkit redesignation, removal of obsolete tasks, and renumbering of late-phase items. Establishes canonical phase-separated task architecture for geometric AI development."
     },
+ {
+  "id": "DN-005",
+  "phase": 4,
+  "title": "Add folder-level README for notebook suite",
+  "path": "notebooks/README.md",
+  "status": "completed",
+  "priority": "medium",
+  "completed_at": "Friday, 30 October 2026, 21:36 GMT",
+  "location": "Dublin, Ireland",
+  "commit_description": "Add folder-level README for Phase 4 notebook suite with color tiles and emoji-coded pedagogy. Includes VS Code and Jupyter execution instructions, full notebook index, color tile legend, and geometric AI context for latent geometry, operators, multimodal fusion, collapse surfaces, and safety alignment."
+    },
     {
   "id": "T-001",
   "phase": 1,
