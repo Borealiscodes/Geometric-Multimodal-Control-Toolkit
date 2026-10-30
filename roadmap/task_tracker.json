@@ -136,14 +136,17 @@
   "location": "Dublin, Ireland",
   "commit_description": "Implement text multimodal adapter including tokenization, embedding, manifold patch construction, curvature-aware metadata, spectral field estimation, routing metadata, collapse detection, and spectral drift. Establishes the first multimodal adapter for Phase 3 and integrates with curvature, holonomy, routing ecology, and Fantasy Engine runtime."
     },
-    {
-      "id": "T-012",
-      "phase": 4,
-      "title": "Create latent space walk notebook",
-      "path": "notebooks/01_latent_space_walk.ipynb",
-      "status": "pending",
-      "priority": "medium"
-    },
+{
+  "id": "T-012",
+  "phase": 3,
+  "title": "Implement vision multimodal adapter",
+  "path": "toolkit/multimodal/vision.py",
+  "status": "completed",
+  "priority": "medium",
+  "completed_at": "Friday, 30 October 2026, 21:02 GMT",
+  "location": "Dublin, Ireland",
+  "commit_description": "Implement vision multimodal adapter including image preprocessing, feature extraction, manifold patch construction, curvature-aware metadata, spectral field estimation, routing metadata, collapse detection, and spectral drift. Establishes the second multimodal adapter for Phase 3 and integrates with curvature, holonomy, routing ecology, and Fantasy Engine runtime."
+},
     {
       "id": "T-013",
       "phase": 5,
