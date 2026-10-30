@@ -1,14 +1,10 @@
 use crate::spectral::{eigenvalues, spectral_drift};
+use crate::safety::tuning::{smooth_damp};
 
-/// SpectralEnvelope enforces spectral stability:
-/// - eigenvalues must be non-negative
-/// - drift must remain below tolerance
 pub struct SpectralEnvelope;
 
 impl SpectralEnvelope {
-    pub fn new() -> Self {
-        SpectralEnvelope
-    }
+    pub fn new() -> Self { SpectralEnvelope }
 
     pub fn enforce(&self, z_prev: &[f64], z_next: &[f64], hessian: &[Vec<f64>]) -> Vec<f64> {
         let eigs = eigenvalues(hessian);
@@ -16,16 +12,16 @@ impl SpectralEnvelope {
 
         let mut corrected = z_next.to_vec();
 
-        // Clamp negative eigenvalues
+        // Soft eigenvalue correction
         if eigs.iter().any(|e| *e < 0.0) {
             for v in corrected.iter_mut() {
-                *v = v.abs();
+                *v = smooth_damp(*v.abs());
             }
         }
 
-        // Damp drift if above tolerance
+        // Soft drift damping
         if drift > crate::DRIFT_TOLERANCE {
-            let scale = crate::DRIFT_TOLERANCE / drift;
+            let scale = smooth_damp(crate::DRIFT_TOLERANCE / drift);
             for v in corrected.iter_mut() {
                 *v *= scale;
             }
