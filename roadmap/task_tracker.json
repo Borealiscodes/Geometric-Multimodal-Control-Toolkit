@@ -60,6 +60,17 @@
   "location": "Dublin, Ireland",
   "commit_description": "Add Expanded Roadmap with complete 10-phase structure including documentation tiers, operator algebra, multimodal adapters, Dream Lab notebook suite, Bill Nye explainer tiles, invariant tests, Fantasy Engine runtime integration, developer retrospectives, release packaging, and optional public demo layer. Includes color-tile and emoji-coded pedagogy aligned with geometric multimodal control architecture."
 },
+{
+  "id": "DN-testing-stack",
+  "phase": 5,
+  "title": "Developer Note — Testing Stack Inclusion (B vs C)",
+  "path": "docs/developer_notes/testing_stack.md",
+  "status": "completed",
+  "priority": "medium",
+  "completed_at": "Friday, 30 October 2026, 22:38 GMT",
+  "location": "Dublin, Ireland",
+  "commit_description": "Add Developer Note detailing inclusion criteria for testing layers within the GeometricMultimodalControl repository. Clarifies separation of concerns across formal invariants (Coq), geometric CAD/operator algebra (Lean), and runtime stress tests. Recommends including only runtime testing (Layer C) in the main toolkit while keeping formal systems (Layers A and B) in separate repositories for architectural clarity and maintainability."
+},
     {
   "id": "T-001",
   "phase": 1,
