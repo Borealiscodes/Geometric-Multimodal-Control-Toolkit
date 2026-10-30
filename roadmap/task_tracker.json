@@ -140,3 +140,16 @@
     }
   ]
 }
+
+
+{
+  "id": "T-020",
+  "phase": 2,
+  "title": "Geometric Operator Toolkit",
+  "path": "docs/operators/operator_toolkit.md",
+  "status": "completed",
+  "priority": "high",
+  "completed_at": "Friday, 30 October 2026, 20:07 GMT",
+  "location": "Dublin, Ireland",
+  "commit_description": "Add Phase 2 Geometric Operator Toolkit tile with accessible, engineering, and geometrist layers. Introduces operator algebra for kids, Lean as CAD for geometric AI, Fantasy Engine runtime, and formal operator algebra. Establishes operators as core primitives for multimodal world-building, adjacency, holonomy, collapse geometry, and spectral world control."
+}
