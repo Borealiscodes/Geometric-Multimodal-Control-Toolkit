@@ -71,6 +71,17 @@
   "location": "Dublin, Ireland",
   "commit_description": "Add Developer Note detailing inclusion criteria for testing layers within the GeometricMultimodalControl repository. Clarifies separation of concerns across formal invariants (Coq), geometric CAD/operator algebra (Lean), and runtime stress tests. Recommends including only runtime testing (Layer C) in the main toolkit while keeping formal systems (Layers A and B) in separate repositories for architectural clarity and maintainability."
 },
+{
+  "id": "DN-test-phase-scaffolding",
+  "phase": 6,
+  "title": "Developer Note — Test Phase Scaffolding",
+  "path": "docs/developer_notes/test_phase_scaffolding.md",
+  "status": "completed",
+  "priority": "high",
+  "completed_at": "Friday, 30 October 2026, 22:46 GMT",
+  "location": "Dublin, Ireland",
+  "commit_description": "Add Developer Note defining the runtime test-phase scaffolding for the GeometricMultimodalControl toolkit. Establishes the C-layer testing architecture using Rust as the deterministic engine and Python as an optional exploration layer. Specifies folder layout, operator/spectral/geometry/world test taxonomy, and recommends a unified Rust test harness via library.rs with modular test files for clarity and maintainability."
+}
     {
   "id": "T-001",
   "phase": 1,
@@ -102,7 +113,7 @@
   "priority": "high",
   "completed_at": "Friday, 30 October 2026, 19:37 GMT",
   "location": "Dublin, Ireland",
-  "commit_description": "Add fully tiered Meadow Pedagogy tile with accessible, engineering, and geometrist layers. Introduces latent-field smoothness through kid-level pedagogy, hands-on activities, curriculum recommendations, system architecture implications, and formal mathematical analysis. Establishes smoothness as a core stability principle for multimodal control within the accessible docs tier."
+  "commit_description": "Add fully tiered Meadow Pedagogy tile with accessible, engineering, and geometrist layers. Introduces latent-field smoothness through kid-level pedagogy, hands-on activities, curriculum recommendations, system architecture implications, and formal mathematical analysis. Establishes smoothness as a core stability principle for multimodal control within, the accessible docs tier."
     },
     {
   "id": "T-004",
