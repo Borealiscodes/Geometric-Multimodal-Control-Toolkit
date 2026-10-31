@@ -767,3 +767,87 @@
     "ready_for": "Phase 11 — Holonomy Transport"
   }
 }
+{
+  "phase": "Phase 11 — Holonomy Transport Layer",
+  "status": "in-progress",
+  "modules": {
+    "planning": [
+      {
+        "file": "phase11-holonomy-transport/Developer-Note.md",
+        "description": "Mathematical, computational, and architectural rationale for Phase 11 scaffolding.",
+        "status": "complete"
+      }
+    ],
+    "operators": [
+      {
+        "name": "HTO",
+        "file": "holonomy_transport.rs",
+        "description": "Parallel transport of collapse-surface tensors.",
+        "status": "scaffolding-required"
+      },
+      {
+        "name": "CTO",
+        "file": "holonomy_curvature.rs",
+        "description": "Curvature propagation under holonomy.",
+        "status": "scaffolding-required"
+      },
+      {
+        "name": "KTO",
+        "file": "holonomy_compat.rs",
+        "description": "Compatibility envelope transport under rotation.",
+        "status": "scaffolding-required"
+      }
+    ],
+    "batches": [
+      {
+        "id": 25,
+        "file": "batch25_holonomy_normals.rs",
+        "description": "Transport of normals across collapse-surface manifold.",
+        "status": "scaffolding-required"
+      },
+      {
+        "id": 26,
+        "file": "batch26_holonomy_curvature.rs",
+        "description": "Transport of curvature intensities along holonomy paths.",
+        "status": "scaffolding-required"
+      },
+      {
+        "id": 27,
+        "file": "batch27_holonomy_alignment.rs",
+        "description": "Transport of alignment tensor under holonomy rotation.",
+        "status": "scaffolding-required"
+      }
+    ],
+    "lean": [
+      {
+        "file": "HolonomyTransport.lean",
+        "description": "Global invariants for holonomy transport.",
+        "status": "pending-scaffolding"
+      }
+    ],
+    "documentation": [
+      {
+        "file": "phase11-holonomy-transport/README.md",
+        "description": "Phase 11 documentation (to be generated after scaffolding).",
+        "status": "pending"
+      }
+    ]
+  },
+  "integration": {
+    "inputs": [
+      "collapse-surface manifold (Phase 10)",
+      "curvature tensor (Phase 10)",
+      "alignment tensor (Phase 10)",
+      "compatibility envelope (Phase 10)",
+      "gradient field (Phase 10)"
+    ],
+    "outputs": [
+      "holonomy_normals",
+      "holonomy_curvature",
+      "holonomy_alignment",
+      "holonomy_compatibility",
+      "holonomy_gradient"
+    ],
+    "ready_for": "Phase 12 — Projection-Holonomy Routing"
+  }
+}
