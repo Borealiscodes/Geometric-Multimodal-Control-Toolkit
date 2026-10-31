@@ -1,6 +1,6 @@
 pub struct HolonomyCompatibilityOperator;
 
-impl HolonomyCompatibilityOperator {
+impl HolonomyCompatibilityOperator { 
 
     /// Phase 11: Compatibility envelope transport along holonomy paths.
     ///
