@@ -768,16 +768,19 @@
   }
 }
 
-    
-    
 {
   "phase": "Phase 11 — Holonomy Transport Layer",
-  "status": "in-progress",
+  "status": "complete",
   "modules": {
     "planning": [
       {
         "file": "phase11-holonomy-transport/Developer-Note.md",
         "description": "Rationale for Phase 11 scaffolding.",
+        "status": "complete"
+      },
+      {
+        "file": "phase11-holonomy-transport/Developer-Note-Vertical-Slice.md",
+        "description": "Vertical-slice strategy for dependency-respecting implementation.",
         "status": "complete"
       }
     ],
@@ -785,20 +788,20 @@
       {
         "name": "HTO",
         "file": "holonomy_transport.rs",
-        "description": "Parallel transport of collapse-surface tensors.",
-        "status": "scaffolded"
+        "description": "Parallel transport of collapse-surface normals.",
+        "status": "complete"
       },
       {
         "name": "CTO",
         "file": "holonomy_curvature.rs",
         "description": "Curvature propagation under holonomy.",
-        "status": "scaffolded"
+        "status": "complete"
       },
       {
         "name": "KTO",
         "file": "holonomy_compat.rs",
         "description": "Compatibility envelope transport.",
-        "status": "scaffolded"
+        "status": "complete"
       }
     ],
     "batches": [
@@ -806,33 +809,33 @@
         "id": 25,
         "file": "batch25_holonomy_normals.rs",
         "description": "Transport of normals across collapse-surface manifold.",
-        "status": "scaffolded"
+        "status": "complete"
       },
       {
         "id": 26,
         "file": "batch26_holonomy_curvature.rs",
         "description": "Transport of curvature intensities along holonomy paths.",
-        "status": "scaffolded"
+        "status": "complete"
       },
       {
         "id": 27,
         "file": "batch27_holonomy_alignment.rs",
-        "description": "Transport of alignment tensor under holonomy rotation.",
-        "status": "scaffolded"
+        "description": "Transport of compatibility envelope under holonomy rotation.",
+        "status": "complete"
       }
     ],
     "lean": [
       {
-        "file": "HolonomyTransport.lean",
-        "description": "Global invariants for holonomy transport.",
-        "status": "pending"
+        "file": "lean/geometry/collapse_surface/HolonomyTransport.lean",
+        "description": "Lean scaffolding for holonomy transport invariants.",
+        "status": "complete"
       }
     ],
     "documentation": [
       {
         "file": "phase11-holonomy-transport/README.md",
         "description": "Phase 11 documentation.",
-        "status": "pending"
+        "status": "complete"
       }
     ]
   },
@@ -854,3 +857,5 @@
     "ready_for": "Phase 12 — Projection-Holonomy Routing"
   }
 }
+    
+    
