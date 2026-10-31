@@ -946,7 +946,7 @@
       "routed_gradient"
     ],
     "ready_for": "Phase 13 — Global Invariants & Continuity"
-  }
+  },
     }
 
     {
@@ -1011,3 +1011,73 @@
     "ready_for": "Phase 14 — Ecology Layer Integration"
   }
     },
+{
+  "phase": "Phase 13 — Global Invariants & Continuity",
+  "status": "complete",
+  "modules": {
+    "planning": [
+      {
+        "file": "phase13-global-invariants/Developer-Note.md",
+        "description": "Global invariants architecture and proof planning.",
+        "status": "complete"
+      }
+    ],
+    "lean": [
+      {
+        "file": "lean/geometry/collapse_surface/HolonomyGlobal.lean",
+        "description": "Lean scaffolding for global invariants.",
+        "status": "complete"
+      }
+    ],
+    "invariants": [
+      {
+        "component": "Path Validity",
+        "file": "invariants.rs",
+        "description": "Rust invariant scaffolding for path validity.",
+        "status": "declared"
+      },
+      {
+        "component": "Projection Consistency",
+        "file": "invariants.rs",
+        "description": "Rust invariant scaffolding for projection consistency.",
+        "status": "declared"
+      },
+      {
+        "component": "Merge Stability",
+        "file": "invariants.rs",
+        "description": "Rust invariant scaffolding for merge stability.",
+        "status": "declared"
+      },
+      {
+        "component": "Continuity Preservation",
+        "file": "invariants.rs",
+        "description": "Rust invariant scaffolding for continuity preservation.",
+        "status": "declared"
+      }
+    ],
+    "documentation": [
+      {
+        "file": "phase13-global-invariants/README.md",
+        "description": "Phase 13 documentation.",
+        "status": "complete"
+      }
+    ]
+  },
+  "integration": {
+    "inputs": [
+      "routed_normals",
+      "routed_curvature",
+      "routed_alignment",
+      "routed_compatibility",
+      "routed_gradient"
+    ],
+    "outputs": [
+      "globally_consistent_normals",
+      "globally_consistent_curvature",
+      "globally_consistent_alignment",
+      "globally_consistent_compatibility",
+      "globally_consistent_gradient"
+    ],
+    "ready_for": "Phase 14 — Ecology Layer Integration"
+  }
+}
