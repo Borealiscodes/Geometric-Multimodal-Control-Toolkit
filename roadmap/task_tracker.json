@@ -857,11 +857,10 @@
     "ready_for": "Phase 12 — Projection-Holonomy Routing"
   }
 }
-    
-    
-{
+
+    {
   "phase": "Phase 12 — Projection-Holonomy Routing",
-  "status": "in-progress",
+  "status": "complete",
   "modules": {
     "planning": [
       {
@@ -874,20 +873,20 @@
       {
         "name": "HolonomyPathSelector",
         "file": "path_selector.rs",
-        "description": "Selects valid holonomy paths.",
-        "status": "pending"
+        "description": "Adjacency-based holonomy path selection.",
+        "status": "complete"
       },
       {
         "name": "HolonomyProjectionOperator",
         "file": "projection_operator.rs",
-        "description": "Projects transported quantities into manifold regions.",
-        "status": "pending"
+        "description": "Terminal-region projection for transported quantities.",
+        "status": "complete"
       },
       {
         "name": "HolonomyMergeOperator",
         "file": "merge_operator.rs",
-        "description": "Resolves conflicts between overlapping holonomy routes.",
-        "status": "pending"
+        "description": "Geometry-aware conflict resolution with weighted blending.",
+        "status": "complete"
       }
     ],
     "batches": [
@@ -895,27 +894,39 @@
         "id": 28,
         "file": "batch28_path_selection.rs",
         "description": "Holonomy path selection batch.",
-        "status": "pending"
+        "status": "complete"
       },
       {
         "id": 29,
         "file": "batch29_projection_merge.rs",
         "description": "Projection and merge batch.",
-        "status": "pending"
+        "status": "complete"
+      }
+    ],
+    "logic": [
+      {
+        "component": "Phase 12B Routing Logic",
+        "description": "Adjacency traversal, projection, minimal merge.",
+        "status": "complete"
+      },
+      {
+        "component": "Phase 12C Conflict Resolution Layer",
+        "description": "Geometry-aware blending and continuity-preserving merge.",
+        "status": "complete"
       }
     ],
     "lean": [
       {
         "file": "lean/geometry/collapse_surface/HolonomyRouting.lean",
         "description": "Lean scaffolding for routing invariants.",
-        "status": "pending"
+        "status": "complete"
       }
     ],
     "documentation": [
       {
         "file": "phase12-projection-holonomy-routing/README.md",
         "description": "Phase 12 documentation.",
-        "status": "pending"
+        "status": "complete"
       }
     ]
   },
@@ -936,4 +947,4 @@
     ],
     "ready_for": "Phase 13 — Global Invariants & Continuity"
   }
-}
+    }
