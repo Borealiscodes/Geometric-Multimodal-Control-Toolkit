@@ -1080,4 +1080,81 @@
     ],
     "ready_for": "Phase 14 — Ecology Layer Integration"
   }
-}
+},
+
+    {
+  "phase": "Phase 14 — Ecology Layer Integration",
+  "status": "complete",
+  "modules": {
+    "planning": [
+      {
+        "file": "phase14-ecology-layer/Developer-Note.md",
+        "description": "Ecology layer architecture and operator planning.",
+        "status": "complete"
+      }
+    ],
+    "operators": [
+      {
+        "name": "ContinuityOperator",
+        "file": "operators.rs",
+        "status": "complete"
+      },
+      {
+        "name": "StabilityOperator",
+        "file": "operators.rs",
+        "status": "complete"
+      },
+      {
+        "name": "InteractionOperator",
+        "file": "operators.rs",
+        "status": "complete"
+      },
+      {
+        "name": "Continuity Logic",
+        "file": "continuity.rs",
+        "status": "complete"
+      },
+      {
+        "name": "Stability Logic",
+        "file": "stability.rs",
+        "status": "complete"
+      },
+      {
+        "name": "Interaction Logic",
+        "file": "interaction.rs",
+        "status": "complete"
+      }
+    ],
+    "lean": [
+      {
+        "file": "lean/geometry/collapse_surface/HolonomyEcology.lean",
+        "description": "Lean scaffolding for ecological invariants.",
+        "status": "pending"
+      }
+    ],
+    "documentation": [
+      {
+        "file": "phase14-ecology-layer/README.md",
+        "description": "Phase 14 documentation.",
+        "status": "complete"
+      }
+    ]
+  },
+  "integration": {
+    "inputs": [
+      "globally_consistent_normals",
+      "globally_consistent_curvature",
+      "globally_consistent_alignment",
+      "globally_consistent_compatibility",
+      "globally_consistent_gradient"
+    ],
+    "outputs": [
+      "ecology_stable_normals",
+      "ecology_stable_curvature",
+      "ecology_stable_alignment",
+      "ecology_stable_compatibility",
+      "ecology_stable_gradient"
+    ],
+    "ready_for": "Phase 15 — Ecology Safety & Global Ecology Invariants"
+  }
+    }
