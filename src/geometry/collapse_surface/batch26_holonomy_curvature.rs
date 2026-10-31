@@ -1,3 +1,3 @@
-pub fn batch27_holonomy_alignment() {
-    // Orchestrates holonomy transport of alignment tensor
+pub fn batch26_holonomy_curvature() {
+    // Orchestrates holonomy transport of curvature
 }
