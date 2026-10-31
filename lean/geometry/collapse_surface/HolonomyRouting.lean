@@ -1,7 +1,7 @@
 import Mathlib.Data.Real.Basic
 import Mathlib.Data.Vector.Basic
 
-/-!
+/-! 
   Phase 12 — Projection-Holonomy Routing
   Lean scaffolding for routing invariants.
   This file declares the structure of routing invariants without proofs.
