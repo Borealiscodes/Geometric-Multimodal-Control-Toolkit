@@ -654,3 +654,143 @@
 
   "commit_description": "Add Phase 9 README and STATUS documents covering full Seed Geometry Activation, including batch breakdown, geometry module structure, and next actions. Confirms Phase 9 completion and readiness for Phase 10."
 }
+
+
+{
+  "phase": 10,
+  "module": "Collapse-Surface Geometry Activation",
+  "status": "planning-complete",
+  "description": "Activation of collapse-surface geometry layer. Converts collapse proximity into spatial manifold with curvature, alignment, compatibility, and gradient fields. Prepares geometry for Phase 11 holonomy.",
+  "batches": [
+    {
+      "batch": 21,
+      "name": "Collapse-Surface Generation",
+      "operators": ["CSG"],
+      "outputs": [
+        "collapse_surface_manifold",
+        "surface_normals_initial",
+        "seed_envelope_binding"
+      ],
+      "requires": [
+        "seed_geometry_envelope",
+        "worldrule_stability_map"
+      ]
+    },
+    {
+      "batch": 22,
+      "name": "Collapse-Curvature",
+      "operators": ["CCO"],
+      "outputs": [
+        "collapse_curvature_tensor",
+        "instability_curvature_zones",
+        "curvature_continuity_validation"
+      ],
+      "requires": [
+        "collapse_surface_manifold",
+        "worldrule_constraints"
+      ]
+    },
+    {
+      "batch": 23,
+      "name": "Collapse-Alignment",
+      "operators": ["CAO"],
+      "outputs": [
+        "alignment_tensors",
+        "modal_adjacency_constraints",
+        "spectral_continuity_integration"
+      ],
+      "requires": [
+        "collapse_curvature_tensor",
+        "seed_alignment_vectors"
+      ]
+    },
+    {
+      "batch": 24,
+      "name": "Collapse-Compatibility",
+      "operators": ["CPO"],
+      "outputs": [
+        "collapse_compatibility_envelope",
+        "incompatible_collapse_regions",
+        "holonomy_ready_surface"
+      ],
+      "requires": [
+        "alignment_tensors",
+        "operator_compatibility_matrix"
+      ]
+    }
+  ],
+  "operators": {
+    "CSG": "Collapse-Surface Generator",
+    "CCO": "Collapse-Curvature Operator",
+    "CAO": "Collapse-Alignment Operator",
+    "CPO": "Collapse-Compatibility Operator",
+    "CGF": "Collapse-Gradient Field"
+  },
+  "runtime": {
+    "rust": {
+      "modules": [
+        "collapse_surface.rs",
+        "collapse_curvature.rs",
+        "collapse_alignment.rs",
+        "collapse_compat.rs",
+        "collapse_gradient.rs"
+      ],
+      "requirements": [
+        "deterministic_curvature_computation",
+        "stable_gradient_field_generation",
+        "compatibility_envelope_validation",
+        "manifold_serialization"
+      ]
+    }
+  },
+  "lean": {
+    "files": [
+      "CollapseSurface.lean",
+      "CollapseCurvature.lean",
+      "CollapseAlignment.lean",
+      "CollapseCompatibility.lean",
+      "CollapseGradient.lean"
+    ],
+    "goals": [
+      "manifold_definition",
+      "curvature_tensor_correctness",
+      "alignment_operator_soundness",
+      "compatibility_constraint_proofs",
+      "gradient_field_continuity"
+    ]
+  },
+  "integration": {
+    "seed_geometry": [
+      "seed_curvature",
+      "seed_drift_vectors",
+      "seed_adjacency",
+      "seed_envelope"
+    ],
+    "worldrules": [
+      "stability_zones",
+      "collapse_triggers",
+      "geometry_constraints"
+    ],
+    "phase11_inputs": [
+      "surface_curvature",
+      "surface_normals",
+      "alignment_tensors",
+      "compatibility_envelope"
+    ]
+  },
+  "outputs": [
+    "collapse_surface_manifold",
+    "collapse_curvature_tensor",
+    "collapse_alignment_tensor",
+    "collapse_compatibility_envelope",
+    "collapse_gradient_field",
+    "holonomy_ready_geometry"
+  ],
+  "provenance": {
+    "author": "Borealis S. Hedling",
+    "location": "Dublin, Ireland",
+    "timestamp": "2026-10-31T02:22:00Z",
+    "repository": "GMC-Toolkit",
+    "document": "phase10-collapse-surface-geometry.md"
+  }
+}
