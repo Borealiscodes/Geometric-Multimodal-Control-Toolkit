@@ -8,7 +8,7 @@ import Mathlib.Data.Vector.Basic
 -/
 
 /-- Collapse-surface normal vector (Phase 10) --/
-structure Normal where
+structure Normal where 
   x : Float
   y : Float
   z : Float
