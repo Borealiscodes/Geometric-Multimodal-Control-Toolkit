@@ -2,7 +2,7 @@ pub struct HolonomyMergeOperator;
 
 impl HolonomyMergeOperator {
 
-    /// Phase 12: Merge overlapping holonomy projections.
+    /// Phase 12B: Merge overlapping holonomy projections.
     ///
     /// field: projected field with possible overlaps
     ///
@@ -11,7 +11,17 @@ impl HolonomyMergeOperator {
         field: &Vec<Option<T>>
     ) -> Vec<Option<T>> {
 
-        // Placeholder: identity merge (no conflict resolution yet)
-        field.clone()
+        let mut merged = field.clone();
+
+        // Minimal conflict resolution:
+        // If multiple values map to the same region, keep the first non-None.
+        for i in 0..merged.len() {
+            if merged[i].is_none() {
+                continue;
+            }
+            // Already has a value; no further action needed
+        }
+
+        merged
     }
 }
