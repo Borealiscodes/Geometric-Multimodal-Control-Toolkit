@@ -859,3 +859,81 @@
 }
     
     
+{
+  "phase": "Phase 12 — Projection-Holonomy Routing",
+  "status": "in-progress",
+  "modules": {
+    "planning": [
+      {
+        "file": "phase12-projection-holonomy-routing/Developer-Note.md",
+        "description": "Routing architecture, math, and operator planning.",
+        "status": "complete"
+      }
+    ],
+    "operators": [
+      {
+        "name": "HolonomyPathSelector",
+        "file": "path_selector.rs",
+        "description": "Selects valid holonomy paths.",
+        "status": "pending"
+      },
+      {
+        "name": "HolonomyProjectionOperator",
+        "file": "projection_operator.rs",
+        "description": "Projects transported quantities into manifold regions.",
+        "status": "pending"
+      },
+      {
+        "name": "HolonomyMergeOperator",
+        "file": "merge_operator.rs",
+        "description": "Resolves conflicts between overlapping holonomy routes.",
+        "status": "pending"
+      }
+    ],
+    "batches": [
+      {
+        "id": 28,
+        "file": "batch28_path_selection.rs",
+        "description": "Holonomy path selection batch.",
+        "status": "pending"
+      },
+      {
+        "id": 29,
+        "file": "batch29_projection_merge.rs",
+        "description": "Projection and merge batch.",
+        "status": "pending"
+      }
+    ],
+    "lean": [
+      {
+        "file": "lean/geometry/collapse_surface/HolonomyRouting.lean",
+        "description": "Lean scaffolding for routing invariants.",
+        "status": "pending"
+      }
+    ],
+    "documentation": [
+      {
+        "file": "phase12-projection-holonomy-routing/README.md",
+        "description": "Phase 12 documentation.",
+        "status": "pending"
+      }
+    ]
+  },
+  "integration": {
+    "inputs": [
+      "holonomy_normals",
+      "holonomy_curvature",
+      "holonomy_alignment",
+      "holonomy_compatibility",
+      "holonomy_gradient"
+    ],
+    "outputs": [
+      "routed_normals",
+      "routed_curvature",
+      "routed_alignment",
+      "routed_compatibility",
+      "routed_gradient"
+    ],
+    "ready_for": "Phase 13 — Global Invariants & Continuity"
+  }
+}
