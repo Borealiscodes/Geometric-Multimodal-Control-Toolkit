@@ -592,3 +592,30 @@
 
   "commit_description": "Add Phase 8 README and STATUS documents. Finalize Phase 8 by completing implementation batches 11–14. Establishes the full P-Layer substrate required for Phase 9 projection-seed geometry activation."
 }
+{
+  "id": "DN-phase9-planning-update",
+  "phase": 9,
+  "title": "Developer Note — Phase 9 Planning (Repository Logic Update)",
+  "path": "docs/altitude/phase9_planning_note.md",
+  "status": "completed",
+  "priority": "high",
+  "completed_at": "Saturday, 31 October 2026, 00:20 GMT",
+  "location": "Dublin, Ireland",
+
+  "summary": "Updated Phase 9 Planning Note to clarify that projection-seed geometry is not exclusive to any single repository. Phase 9 can be implemented inside Geometric-Multimodal-Control-Toolkit due to its organized and integrated holonomy, ecology, world-rule, and safety substrates. Constellation-Manifold-Toolkit remains an optional geometry-only location for future reuse or export. The update preserves altitude purity and documents the conceptual vs repository boundary for G-Layer development.",
+
+  "changes": {
+    "repository_logic": "Added explicit clarification that Phase 9 geometry can be developed in GMC or CMT. GMC recommended due to current organization and integration.",
+    "altitude_boundary": "Reaffirmed that the ecology→geometry boundary is conceptual, not a repo requirement.",
+    "future_export": "Documented that projection-seeds may later be exported or mirrored into CMT if needed."
+  },
+
+  "next_actions": [
+    "Begin Batch 15: Projection-Seed Generator implementation.",
+    "Define seed geometry structs and curvature operators.",
+    "Integrate seed generation with holonomy, ecology, and world-rules.",
+    "Prepare Phase 9 README and STATUS documents."
+  ],
+
+  "commit_description": "Update Phase 9 Planning Note with clarified repository logic. Projection-seed geometry is not exclusive to any toolkit and Phase 9 development can proceed inside GMC. Documents conceptual altitude boundaries and future export options."
+}
