@@ -1,6 +1,6 @@
 pub struct HolonomyCurvatureOperator;
 
-impl HolonomyCurvatureOperator {
+impl HolonomyCurvatureOperator { 
 
     /// Phase 11: Curvature transport along holonomy paths.
     ///
