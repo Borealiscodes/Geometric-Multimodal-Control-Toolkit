@@ -948,3 +948,66 @@
     "ready_for": "Phase 13 — Global Invariants & Continuity"
   }
     }
+
+    {
+  "phase": "Phase 13 — Global Invariants & Continuity",
+  "status": "in-progress",
+  "modules": {
+    "planning": [
+      {
+        "file": "phase13-global-invariants/Developer-Note.md",
+        "description": "Global invariants architecture and proof planning.",
+        "status": "complete"
+      }
+    ],
+    "lean": [
+      {
+        "file": "lean/geometry/collapse_surface/HolonomyGlobal.lean",
+        "description": "Lean proofs for global invariants.",
+        "status": "pending"
+      }
+    ],
+    "invariants": [
+      {
+        "component": "Path Validity",
+        "status": "pending"
+      },
+      {
+        "component": "Projection Consistency",
+        "status": "pending"
+      },
+      {
+        "component": "Merge Stability",
+        "status": "pending"
+      },
+      {
+        "component": "Continuity Preservation",
+        "status": "pending"
+      }
+    ],
+    "documentation": [
+      {
+        "file": "phase13-global-invariants/README.md",
+        "description": "Phase 13 documentation.",
+        "status": "pending"
+      }
+    ]
+  },
+  "integration": {
+    "inputs": [
+      "routed_normals",
+      "routed_curvature",
+      "routed_alignment",
+      "routed_compatibility",
+      "routed_gradient"
+    ],
+    "outputs": [
+      "globally_consistent_normals",
+      "globally_consistent_curvature",
+      "globally_consistent_alignment",
+      "globally_consistent_compatibility",
+      "globally_consistent_gradient"
+    ],
+    "ready_for": "Phase 14 — Ecology Layer Integration"
+  }
+    },
