@@ -2,12 +2,12 @@ pub struct HolonomyProjectionOperator;
 
 impl HolonomyProjectionOperator {
 
-    /// Phase 12: Project transported quantities into manifold regions.
+    /// Phase 12B: Project transported quantities into manifold regions.
     ///
-    /// transported: values from Phase 11 (normals, curvature, compatibility)
-    /// paths: holonomy paths selected by HolonomyPathSelector
+    /// transported: values from Phase 11
+    /// paths: holonomy paths selected by Phase 12B
     ///
-    /// Output: projected field over manifold regions
+    /// Output: projected field with region-level assignments
     pub fn project<T: Copy>(
         transported: &Vec<T>,
         paths: &Vec<Vec<usize>>,
@@ -17,8 +17,10 @@ impl HolonomyProjectionOperator {
         let mut field = vec![None; manifold_size];
 
         for (i, path) in paths.iter().enumerate() {
-            let region = path[0]; // placeholder: project to first region
-            field[region] = Some(transported[i]);
+            // Project to the *last* region in the path (real routing)
+            if let Some(&region) = path.last() {
+                field[region] = Some(transported[i]);
+            }
         }
 
         field
